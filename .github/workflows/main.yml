@@ -1,16 +1,6 @@
 name: Scan Code for Secrets
 
-on:
-  pull_request:
-    - opened
-    - reopened
-    - ready_for_review
-    - synchronize
-  push:
-    branches:
-      - '**'
-    tags:
-      - '!**'
+on: push
 
 jobs:
   check-for-secrets:
